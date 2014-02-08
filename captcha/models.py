@@ -54,7 +54,7 @@ class CaptchaStore(models.Model):
             del(key_)
         super(CaptchaStore, self).save(*args, **kwargs)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.challenge
 
     def remove_expired(cls):
